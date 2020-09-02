@@ -8,8 +8,8 @@
 
 import Foundation
 
-public final class AkashSwiftLibrary {
-
+public class AkashSwiftLibrary {
+    
     let name = "AkashSwiftLibrary"
     
     public func add(a: Int, b: Int) -> Int {
