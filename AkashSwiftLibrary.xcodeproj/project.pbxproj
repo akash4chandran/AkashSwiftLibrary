@@ -16,6 +16,7 @@
 		38283F9C24FF8E9C0034392F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38283F9A24FF8E9C0034392F /* Main.storyboard */; };
 		38283F9E24FF8E9E0034392F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38283F9D24FF8E9E0034392F /* Assets.xcassets */; };
 		38283FA124FF8E9E0034392F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38283F9F24FF8E9E0034392F /* LaunchScreen.storyboard */; };
+		38283FA724FFB6F10034392F /* AkashSwiftLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38283FA624FFB6F10034392F /* AkashSwiftLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		38283F9D24FF8E9E0034392F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38283FA024FF8E9E0034392F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38283FA224FF8E9E0034392F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38283FA624FFB6F10034392F /* AkashSwiftLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkashSwiftLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				38283F7724FF8E1D0034392F /* AkashSwiftLibrary.h */,
 				38283F7824FF8E1D0034392F /* Info.plist */,
+				38283FA624FFB6F10034392F /* AkashSwiftLibrary.swift */,
 			);
 			path = AkashSwiftLibrary;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					38283F7324FF8E1D0034392F = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					38283F7C24FF8E1D0034392F = {
 						CreatedOnToolsVersion = 11.6;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38283FA724FFB6F10034392F /* AkashSwiftLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		38283F8924FF8E1D0034392F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BF32LX22LF;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AkashSwiftLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		38283F8A24FF8E1D0034392F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BF32LX22LF;
@@ -485,6 +493,7 @@
 		38283F8C24FF8E1D0034392F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BF32LX22LF;
 				INFOPLIST_FILE = AkashSwiftLibraryTests/Info.plist;
@@ -503,6 +512,7 @@
 		38283F8D24FF8E1D0034392F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BF32LX22LF;
 				INFOPLIST_FILE = AkashSwiftLibraryTests/Info.plist;
